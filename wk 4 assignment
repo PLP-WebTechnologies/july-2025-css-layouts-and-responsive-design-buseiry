@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthyCare Hospital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <h1>HealthyCare Hospital</h1>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Departments</a></li>
+        <li><a href="#">Doctors</a></li>
+        <li><a href="#">Appointments</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Your Health, Our Priority</h2>
+    <p>Trusted medical care with compassion and professionalism.</p>
+  </section>
+
+  <!-- Services Section (Grid) -->
+  <section class="services">
+    <h2>Our Departments</h2>
+    <div class="service-grid">
+      <div class="card">Emergency Care</div>
+      <div class="card">Pediatrics</div>
+      <div class="card">Radiology</div>
+      <div class="card">Pharmacy</div>
+    </div>
+  </section>
+
+  <!-- Doctors Section (Flexbox) -->
+  <section class="doctors">
+    <h2>Meet Our Doctors</h2>
+    <div class="doctor-flex">
+      <div class="doctor-card">Dr. Adams - Surgeon</div>
+      <div class="doctor-card">Dr. Grace - Pediatrician</div>
+      <div class="doctor-card">Dr. Lee - Radiologist</div>
+    </div>
+  </section>
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f1ec; /* Soft hospital beige */
+  color: #333;
+}
+
+/* Header */
+.header {
+  background-color: #7cb342; /* Soft green for healing */
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #ffcc80; /* Warm orange for comfort */
+  border-bottom: 4px solid #7cb342;
+}
+
+/* Services Section (Grid) */
+.services {
+  padding: 2rem 1rem;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background-color: #a1887f; /* Soft brown for calm */
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Doctors Section (Flexbox) */
+.doctors {
+  padding: 2rem 1rem;
+  background-color: #e0e0e0; /* Neutral background */
+}
+
+.doctor-flex {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.doctor-card {
+  background-color: #8d6e63; /* Warm earthy tone */
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1 1 200px;
+  text-align: center;
+  color: #fff;
+}
+
+
+}
+
+/* Responsive Design with Media Queries */
+@media (max-width: 900px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .doctor-flex {
+    flex-direction: column;
+  }
+}
+
+
+  
